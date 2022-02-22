@@ -34,7 +34,13 @@ scene report from the database.
 INDSÆT schema.png HER
 
 
+Hvordan tjekker vi for om vi har det rigtige svar:
+INSERT INTO solution VALUES (1, 'Insert the name of the person you found here');
+        
+        SELECT value FROM solution;
 
+BONUS
+Hvem var bagpersonen?
 
 ### Credits
 The Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. 
