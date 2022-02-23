@@ -1,5 +1,5 @@
 ---
-title: "sorting and selecting data"
+title: "Database design"
 teaching: 0
 exercises: 0
 questions:

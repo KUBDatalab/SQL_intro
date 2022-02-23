@@ -1,5 +1,5 @@
 ---
-title: "sorting and selecting data"
+title: "Saving queries"
 teaching: 0
 exercises: 0
 questions:

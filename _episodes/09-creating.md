@@ -1,5 +1,5 @@
 ---
-title: "sorting and selecting data"
+title: "Creating tables and modifying data"
 teaching: 0
 exercises: 0
 questions:
