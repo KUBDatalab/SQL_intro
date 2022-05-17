@@ -14,6 +14,9 @@ keypoints:
 ---
 ## What is SQL?
 
+https://github.com/awesomedata/awesome-public-datasets#museums
+
+https://data.world/datasets/sql
 
 ## Why are we working with SQL
 
