@@ -14,6 +14,15 @@ keypoints:
 ---
 ## What is SQL?
 
+
+Vi skal bruge et motiverende eksempel. Måske viser vi også
+et eller andet.
+Vi tager udgangspunkt i disse to:
+https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies?select=titles.csv
+
+https://www.imdb.com/interfaces/
+
+Der er også andre ting der er sjove. bare så vi husker dem:
 https://github.com/awesomedata/awesome-public-datasets#museums
 
 https://data.world/datasets/sql
