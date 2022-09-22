@@ -63,7 +63,26 @@ Tilbage i database structur - modify table. Tag dem alle...
 
 Så kører det !
 
-Vi finder et nyt tidspunkt.
+
+SELECT avg(imdb_score), age_certification
+FROM netflix_titles
+WHERE imdb_votes > 500
+GROUP BY age_certification
+ORDER BY avg(imdb_score)
+
+det er måske værd at nævne kommentarer.
+
+SELECT avg(imdb_score) AS average, age_certification
+FROM netflix_titles
+WHERE imdb_votes > 500
+GROUP BY age_certification
+ORDER BY avg(imdb_score)
+
+LIMIT 100 begrænser.
+
+Lad os alle joine
+
+4987
 
 
 {% include links.md %}
