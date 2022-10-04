@@ -82,7 +82,61 @@ LIMIT 100 begrænser.
 
 Lad os alle joine
 
-4987
+Den her fortæller os, hvor mange fra netflix_titles, der har et imdb_id, men som ikke findes i imdb_title:
+ 
+SELECT count(netflix_titles.imdb_score)
+FROM netflix_titles
+LEFT JOIN imdb_title ON imdb_title.tconst = netflix_titles.imdb_id
+WHERE imdb_title.tconst IS NULL
+ 
+Resultatet er 316, hvilket er den forskel, der var på at tælle:
+ 
+SELECT count(imdb_score)
+FROM netflix_titles
+ 
+(5283)
+ 
+Og:
+ 
+SELECT count(imdb_score)
+FROM netflix_titles
+INNER JOIN imdb_title
+ON tconst = imdb_id
+ 
+(4967)
+ 
+Der er altså mangler i imdb_title, og vi kan bevise det!
+
+
+Nu vil vi godt have gennemsnitlig rating 
+
+Er rating den samme for samme film i de to sæt?
+Nope.
+
+SELECT avg(averageRating) 
+FROM imdb_title
+LEFT JOIN netflix_titles
+ON imdb_title.tconst = netflix_title.imdb_id
+WHERE netflix_titles.imdb_id IS NULL
+
+Note to self - kør lige de her træk igennem med R - for at dobbelttjekke at 
+resultaterne stemmer.
+
+
+
+prøv det her:
+
+WITH one AS (
+    
+), two AS (
+    
+    ), svar AS (
+    SELECT *, 1 AS avg FROM one
+    UNION
+    SELECT *, 2 AS avg FROM two
+)
+
+
 
 
 {% include links.md %}
