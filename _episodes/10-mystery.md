@@ -31,15 +31,24 @@ scene report from the database.
 
 ## Database structure
 
+Until now we have only had two tables in our database.
+
+With more complicated databases, as this one, a useful tool i an ER-digram:
+
 INDSÆT schema.png HER
+![ER-diagram](../fig/schema.png)
 
 
-Hvordan tjekker vi for om vi har det rigtige svar:
+
+## Have you found the solution?
+
+Run this code:
 INSERT INTO solution VALUES (1, 'Insert the name of the person you found here');
-        
+      
         SELECT value FROM solution;
 
-BONUS
+## Something to practice with at home
+
 Hvem var bagpersonen?
 
 ### Credits
@@ -49,16 +58,5 @@ See the GitHub repository for more information.
 
 Adapted and produced for the web by Joe Germuska.
 
-This mystery was inspired by a crime in the neighboring Terminal City.
-
-Web-based SQL is made possible by SQL.js
-
-SQL query custom web components created and released to the public domain by Zi Chong Kao, creator of Select Star SQL.
-
-Detective illustration courtesy of Vectors by Vecteezy
-
-Original code for this project is released under the MIT License
-
-Original text and other content for this project is released under Creative Commons CC BY-SA 4.0
 
 {% include links.md %}
