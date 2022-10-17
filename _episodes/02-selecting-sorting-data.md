@@ -34,7 +34,15 @@ An SQL query that selects only the FELTNAVN column from the TABELNAVN table:
     SELECT feltnavn
     FROM tablenavn;
 
+SELECT title
+FROM netflix;
+
 Note that we end our query with a semicolon, ;.
+
+![Our first queary](../fig/firstquery.png)
+
+
+
 
 ## Capitalization and good style
 
@@ -59,6 +67,8 @@ If we want everything, the wildcard * can be used:
 
     SELECT *
     FROM tablenavn;
+
+Try that!
 
 ## Unique values
 
