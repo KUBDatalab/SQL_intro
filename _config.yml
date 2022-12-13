@@ -2,16 +2,18 @@
 # Values for this lesson.
 #------------------------------------------------------------
 
-# Which carpentry is this ("swc", "dc", "lc", or "cp")?
+# Which carpentry is this ("swc", "dc", "lc", "kd", or "cp")?
 # swc: Software Carpentry
 # dc: Data Carpentry
 # lc: Library Carpentry
+# kd: KUB Datalab
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
-carpentry: "swc"
+# kd: KUB Datalab
+carpentry: "kd"
 
 # Overall title for pages.
-title: "Lesson Title"
+title: "SQL intro"
 
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
@@ -31,13 +33,14 @@ kind: "lesson"
 repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
-email: "team@carpentries.org"
+email: "kubdatalab@kb.dk"
 
 # Sites.
+coc: "https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html"
 amy_site: "https://amy.carpentries.org/"
-carpentries_github: "https://github.com/carpentries"
-carpentries_pages: "https://carpentries.github.io"
-carpentries_site: "https://carpentries.org/"
+carpentries_github: "https://github.com/KUBDatalab"
+carpentries_pages: "https://kubdatalab.github.io"
+carpentries_site: "https://kub.kb.dk/datalab"
 dc_site: "https://datacarpentry.org"
 example_repo: "https://github.com/carpentries/lesson-example"
 example_site: "https://carpentries.github.io/lesson-example"
