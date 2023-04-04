@@ -1,53 +1,27 @@
 ---
 title: Setup
 ---
-
+No previous experience with SQL is assumed in this course. 
 
 ## Software requirements
 
-## DB Browser for SQLite
+However, in preparation for it, we do require you to have downloaded and
+installed the database manager we are working with:
 
-http://sqlitebrowser.org/
+[DB Browser for SQLite](http://sqlitebrowser.org/) can be downloaded here.
+It is available for Windows, Mac and Linux.
 
 ### Download the data
 
+We are going to work with three datasets. Please download them to a place on
+your computer, where you can find them again:
 
+[imdb.zip](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/imdb.zip)
 
-### open the database file
+[netflix.csv](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/netflix.csv)
 
-### Import the SQL file
+[Murder mystery](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/murder.zip)
+https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/imdb.zip",
 
-Open DB Browser for SQLite.
-Choose “File” > “Import” > “Database” from SQL file from the menu bar at the top of your screen.
-Navigate to where you saved the [NAME OF DATA] folder and/or files. For example, your Desktop.
-Select “[NAME OF DATA]”.
-You will be prompted to “Save As” (i.e. this is the name of the database).
-Type “[NAME OF DATA]” in the “Save as” box.
-Make sure that “SQLite database files” is selected in the drop down and that you save the database to a location where you can easily find it, again, like your Desktop.
-Click “Save”.
-You should see an “Executing SQL…” prompt and an “Import completed.” prompt when finished.
-Click “OK”.
-You will see one more prompt which says, “Do you want to save the changes made to the database file…”.
-Click “Save”.
-
-
-
-### SqliteOnline
-This step is an optional alternative to installing DB Browser on your computer.
-
-If you do not want to install DB Browser on your computer, or if you experience
-trouble installing it, you can visit https://sqliteonline.com/.
-
-#### Open the database file in SqliteOnline
-Choose "File" > "Open DB" from the SqliteOnline menu bar.
-Navigate to where you saved the [DATA] folder and/or files. For example, your Desktop.
-Select "[NAME OF DATA]".
-
-#### Open the SQL file in SqliteOnline
-Choose "File > "Text-SQL" > "Open SQL" from the SqliteOnline menu bar.
-Navigate to where you saved the [DATA] folder and/or files. For example, your Desktop.
-Select "[NAME OF DATA]".
-You should see the SQL in a text box below the home icon.
-Click the "Run" button in the SqliteOnline menu bar.
 
 {% include links.md %}
