@@ -16,11 +16,11 @@ It is available for Windows, Mac and Linux.
 We are going to work with three datasets. Please download them to a place on
 your computer, where you can find them again:
 
-[imdb.zip](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/imdb.zip)
+[imdb.zip](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/gh-pages/imdb.zip)
 
-[netflix.csv](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/netflix.csv)
+[netflix.csv](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/gh-pages/data/netflix.csv)
 
-[Murder mystery](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/murder.zip)
+[Murder mystery](https://raw.githubusercontent.com/KUBDatalab/SQL_intro/gh-pages/data/murder.zip)
 https://raw.githubusercontent.com/KUBDatalab/SQL_intro/main/data/imdb.zip",
 
 
