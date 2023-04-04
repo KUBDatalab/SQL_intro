@@ -17,10 +17,25 @@ keypoints:
 SQL is the abbreviation of "Structured Query Language", a domain specific computer
 language, designed for managing data in relational database systems.
 
+> ## How to pronounce SQL
+> Good question!
+> 
+> Two main schools of thought exist. 
+>
+> The ISO standard (9075) indicates, albeit indirectly, that the 
+> prononcition should be "Ess-que-ell". Or basically the individual 
+> letters one after another.
+> 
+> However, when SQL was first developed in 1974, its proposed name was
+> [SEQUEL](https://dl.acm.org/doi/10.1145/800296.811515). Many people will
+> therefore insist that it should be pronounced like that; sequel.
+>
+> We do not have any preferences here and different implementations may have 
+> their own ideosyncracies. But we do have a fondness for the alternatives
+> "squeal" and "squirrel"
+>
+{.callout}
 
-
-tip
-Hvordan udtales det? Enten SQL eller 
 
 SQL contains many types of statements, broadly grouped into four sublanguages
 
@@ -41,23 +56,32 @@ The relational part of the name refers to the fact that we are not storing
 every piece of information about a given entity in a single table, but rather
 giving an entity an identifyer, a key, that is common for several tables.
 
-DET HER MÅ KUNNE FORKLARES BEDRE.
+If we want to get all information about an entity, we will retrieve it from
+several different tables, using that identifyer, and the relations between
+different tables to extract it.
 
-When we are using a spreadsheet, we put formulas into cells to calculate new 
-values based on old ones. When we are using a database, we send commands 
-(usually called queries) to a database manager: a program that manipulates the 
-database for us. The database manager does whatever lookups and calculations the 
-query specifies, returning the results in a tabular form that we can then use as 
-a starting point for further queries.
+In a Danish context, the obvious example is the CPR-number (in an
+english-language context: social security number), that
+uniquely identifies a person. In one table we have the basic information,
+name, date of birth etc. In another table we have the CPR-numbers, adresses and
+dates of moving to or from those adresses. Having the CPR-number, we can 
+look up the current, or former adresses of the person having that CPR-number.
+The adress might also have its own unique identifyer, tying into a third table
+containg that adress-identifyer, and information about whether or not that
+particular adress is hooked up to district heating.
+
+Identifying a person by his or her CPR-number allows us to look up the current
+adress, use the ID of that address to look up district heaiting information
+in an third table, and thus answer the question: Did the maintainer of this
+course live in a location with district heating on januar 1st 2022?
 
 
-## When are we using databases?
+## Why and when are we using databases?
 
-Primarily because it is fast, even with very large amounts of data, and because 
-it allows us to work with very large amounts of data.
+Primarily because they are fast, even with very large amounts of data, and because it allows us to work with very large amounts of data.
 
 The example data sets we are working with in this course are too large to 
-handle in Excel, which is limited to 1,048,576 rows.
+handle in Excel, which is limited to 1,048,576 rows (2^20).
 
 The, rather simple, database manager we are working with here has a theoretical 
 maximum number of rows that is 2^64 (18,446,744,073,709,551,616).
@@ -70,21 +94,16 @@ are central to understanding how to do similiar things in programming languages
 as R or Python, as well as in interacting with online databases, APIs and 
 search engines.
 
-tip
-## Why are we working with SQL
-Also, in XXXX Britta Nielsen took a course in SQL. This aided her in.
-
-Remember, with great power, comes great responsibility!
 
 
 ## Getting ready!
 
-When you followed the instructions in setup LINK TIL, you downloaded and installed
+When you followed the instructions in setup, you downloaded and installed
 DB Browser for SQLite. This will be our database management system.
 
-You also downloaded two datasets.
+You also downloaded three datasets.
 
-Now we need to get those datasets into DB Browser for SQLite.
+Now we need to get two those datasets into DB Browser for SQLite.
 
 begin by opening DB Browser for SQLite
 
@@ -148,8 +167,6 @@ https://www.imdb.com/interfaces/
 
 der er noget med om film der er det ene sted men ikke det andet får højere eller lavere ratings end dem der er begge steder.
 
-
-## What is the relation between relational databases and SQL?
 
 {% include links.md %}
 
